@@ -1,0 +1,92 @@
+.about-container {
+    display: flex; /* Define o layout em colunas */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+    gap: 20px; /* Espaço entre a imagem e o texto */
+    margin-bottom: 20px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #0b0b0b; /* Cor de texto principal */
+    background-color: #f4f4f4; /* Fundo preto */
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Estilo dos Títulos */
+header h1, section h2 {
+    text-align: center;
+    font-size: 2.5em;
+    color: #0ce73f; /* Azul para os títulos */
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2em;
+    text-align: center;
+    color: #0c0101; /* Cinza claro para o subtítulo */
+    margin-bottom: 20px;
+}
+
+/* Seções com Linhas de Delimitação */
+section {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #f4f4f4; /* Fundo ligeiramente mais claro */
+    border: 1px solid #0077b6; /* Borda azul clara ao redor de cada seção */
+    border-radius: 8px;
+}
+
+section h2 {
+    color: #0077b6; /* Azul para os títulos das seções */
+    margin-bottom: 10px;
+    border-bottom: 2px solid #0077b6; /* Linha azul sob o título */
+    padding-bottom: 5px;
+}
+
+/* Imagem de Perfil */
+.profile-image {
+    display: block;
+    max-width: 150px;
+    margin: 0 auto 20px auto;
+    border-radius: 50%;
+    border: 5px solid #d4a5ff; /* Borda cor de rosa claro */
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #aaa;
+}
+.about-text {
+    max-width: 600px; /* Limita a largura do texto */
+}
+
+.about-text h1 {
+    font-size: 2.5em;
+    color: #0077b6; /* Cor azul para o título */
+    font-weight: bold;
+}
+
+.about-text p {
+    color: #aaa; /* Cor do texto */
+    font-size: 1.2em;
+}
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column; /* Alinha a imagem abaixo do texto em ecrãs pequenos */
+        text-align: center;
+    }
+
+    .profile-image {
+        margin-top: 20px; /* Espaço entre o texto e a imagem no modo coluna */
+    }
+}
