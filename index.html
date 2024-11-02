@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha página</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1 {
+            color: limegreen;
+        }
+
+        .container {
+            max-width: 800px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .section-title {
+            color: #007bff;
+            font-size: 1.8em;
+            margin: 20px 0;
+        }
+
+        .about {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 30px;
+            text-align: left;
+        }
+
+        .about-text {
+            width: 60%;
+        }
+
+        .profile-img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            border: 3px solid #cba0ff;
+            object-fit: cover
+        }
+
+        .hobby-section {
+            border: 2px solid #007bff;
+            border-radius: 8px;
+            padding: 10px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .values-section {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .values-title {
+            font-size: 1.8em;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .values-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .value-item {
+            text-align: center;
+            font-size: 1em;
+            color: #333;
+            max-width: 150px;
+        }
+
+        .value-item img {
+            width: 60px;
+            height: 60px;
+            margin-bottom: 10px;
+        }
+        
+        .curiosities-section {
+            background-color: #007bff; 
+            color: #fff; 
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        .curiosities-section h2 {
+            margin-top: 0;
+        }
+
+        .curiosities-section p {
+            margin: 10px 0;
+        }
+
+        .adjective-section {
+            text-align: center;
+            margin: 20px 0;
+            border: 2px solid rgb(32, 26, 202); 
+            border-radius: 8px;
+            padding: 15px;
+        }
+
+        .adjective-title {
+            color: purple; 
+            font-size: 1.8em;
+            font-weight: bold;
+        }
+
+        .adjective {
+            color: green; 
+            font-size: 1.6em;
+            font-weight: bold;
+        }
+
+
+        .footer {
+            font-size: 0.8em;
+            color: gray;
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Olá, sou Jefferson Pereira</h1>
+        <p>Bem-vindo(a) à minha página pessoal!</p>
+
+        <div class="about">
+            <div class="about-text">
+                <h2 class="section-title">Sobre Mim</h2>
+                <p>Oi, bem vindo(a), sou natural de Olinda mas moro em Recife, estudante do 1º período de Engenharia da Computação na UFPE. Tenho interesse particular nas áreas de Engenharia de software, inteligência artificial e computação ligada à medicina. Estou sempre à procura de novas oportunidades de crescimento pessoal e profissional.</p>
+            </div>
+            <img src="foto2_CITi.jpg" alt="Foto de Jefferson Pereira" class="profile-img">
+        </div>
+
+        <div class="hobby-section">
+            <h2 class="section-title">Os Meus Hobbies</h2>
+            <p>Nos meus tempos livres, gosto de passar tempo com pessoas de qualidade para aliviar a mente (família, amigos, namorada), jogar jogos de FPS e assistir séries. Também sou apaixonado por cachorros e não consigo ficar sem ir à academia.</p>
+        </div>
+
+        <!-- Valores Pessoais -->
+        <div class="values-section">
+            <h2 class="values-title">Meus Valores Pessoais</h2>
+            <div class="values-container">
+                <!-- Honestidade -->
+                <div class="value-item">
+                    <img src="icone_honestidade.png" alt="Ícone de Honestidade">
+                    <p>Honestidade</p>
+                </div>
+                <!-- Disciplina -->
+                <div class="value-item">
+                    <img src="icone_disciplina.png" alt="Ícone de Disciplina">
+                    <p>Disciplina</p>
+                </div>
+                <!-- Amor ao Próximo -->
+                <div class="value-item">
+                    <img src="icone_amor.png" alt="Ícone de Amor ao Próximo">
+                    <p>Amor ao Próximo</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="curiosities-section">
+        <h2>Curiosidades sobre mim</h2>
+        <p>1. Sou fascinado por matemática e física, me tornei professor particular dessas 2 matérias recentemente.</p>
+        <p>2. Sempre tive o sonho de ser engenheiro aeroespacial e estudar no ITA, porém em 2024 decidi mudar de rumo.</p>
+        <p>3. Tive que aprender html e css do zero para fazer essa atividade.</p>
+    </div>
+    <div class="adjective-section">
+        <h2 class="adjective-title">Um adjetivo que me define:</h2>
+        <p class="adjective">Resiliência</p>
+    </div>
+</div>
+<div class="footer">
+    Espero que tenha gostado de me conhecer!
+</div>
+
+</body>
+</html>
